@@ -1,9 +1,15 @@
 <template>
-    <div>main page => ...</div>
+    <div class="page">
+        <RandomCharacter/>
+        <div class="char__content">
+            <CharactersList/>
+            <CharacterInfo/>
+        </div>
+    </div>
 </template>
 
-<script setup></script>
-
-<style scoped lang="scss">
-
-</style>
+<script setup>
+import RandomCharacter from '~/components/RandomCharacter/RandomCharacter.vue'
+import CharactersList from '~/components/CharactersList/CharactersList.vue'
+import CharacterInfo from '~/components/CharacterInfo/CharacterInfo.vue'
+</script>
